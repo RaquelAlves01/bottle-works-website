@@ -1,0 +1,23 @@
+footer {
+  background-color: var(--primary-colour-tint);
+    color: var(--accent-colour-light);
+}
+
+.footer-nav,
+.footer-link {
+  color: var(--accent-colour-light);
+  text-decoration: none;
+}
+
+.footer-nav:hover {
+  color: var(--colour-white);
+}
+
+hr {
+  border-color: var(--accent-colour-light);
+}
+ @media only screen and (min-width: 60em) {
+  .footer-logo {
+    padding-left: 1em;
+  }
+ }

@@ -1,0 +1,17 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --primary-colour: #2A2E34;
+  --primary-colour-tint: #231F20;
+  --primary-colour-light: #555D6B;
+  --secondary-colour: #AFBD38;
+  --secondary-colour-light: #ECEFD2;
+  --accent-colour: #77A1A4;
+  --accent-colour-light: #B7C9CB;
+  --colour-white: #fff;
+  --colour-black: #000;
+  --colour-light-grey: #f2f2f2;
+  --colour-dark-grey: #333;
+}
