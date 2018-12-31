@@ -1,5 +1,5 @@
 header {
-  background-color: var(--colour-white); 
+  background-color: var(--colour-white);
 }
 
 .h-nav {
@@ -80,9 +80,9 @@ header {
 
 #nav-cover.show {
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   top: 0;
-  background: rgba(85, 93, 107, .9);
+  background: rgba(85, 93, 107, 1);
   right: 0;
   left: 0;
   bottom: 0;
@@ -100,7 +100,7 @@ header {
   display: block;
   margin: 0;
   padding: 0;
-  top: 300%;
+  top: 150%;
   right: 35%;
   transform: translateX(50%);
   z-index: 200;
@@ -111,7 +111,7 @@ header {
   display: block;
   position: absolute;
   text-align: center;
-  top: 24px;
+  top: 25px;
   right: 50px;
 }
 
@@ -157,12 +157,15 @@ header {
   color: var(--secondary-colour);
 }
 
-a.micro {
+a.navsize {
   font-size: 1.5rem;
-  line-height: 1.725rem;
 }
 
-@media only screen and (min-width: 82em) {
+.linavspace {
+  padding: .5rem;
+}
+
+@media only screen and (min-width: 63em) {
 
   #togglenav {
     display: none;
@@ -207,9 +210,13 @@ a.micro {
     color: var(--secondary-colour);
   }
 
-  a.micro {
-    font-size: .8rem;
-    line-height: 1.3rem;
+  .linavspace {
+    padding: .1625rem;
   }
+
+  a.navsize {
+    font-size: .6243rem;
+  }
+
 
 }
