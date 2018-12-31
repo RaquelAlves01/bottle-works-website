@@ -15,3 +15,53 @@
   --colour-light-grey: #f2f2f2;
   --colour-dark-grey: #333;
 }
+
+.embed-4by2 {
+  padding-top: 65%;
+}
+
+.btn {
+  background-color: var(--secondary-colour);
+  border-color: transparent;
+  border-radius: 15px;
+}
+
+.white-text {
+  color: var(--colour-white);
+}
+
+.grey-text {
+  color: var(--primary-colour-light);
+}
+
+.green-text {
+  color: var(--secondary-colour);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border-color: var(--secondary-colour);
+  color: var(--secondary-colour);
+}
+
+.btn:hover {
+  background-color: var(--accent-colour);
+  border-color: transparent;
+  border-radius: 15px;
+}
+
+.btn-ghost:hover {
+  background-color: transparent;
+  border-color: var(--accent-colour);
+  color: var(--accent-colour);
+}
+
+.max-widthtitle {
+  max-width: 14em;
+  color: var(--colour-white);
+}
+
+.max-widthtext {
+  max-width: 28em;
+  color: var(--colour-white);
+}
