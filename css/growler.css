@@ -1,0 +1,12 @@
+.growler-sec {
+  background-color: var(--primary-colour-light)
+}
+
+.partners-carousel {
+  background-color: var(--primary-colour-tint);
+}
+
+.pl-container {
+  background-color: var(--colour-light-grey);
+  border: 6px solid var(--primary-colour-light);
+}
