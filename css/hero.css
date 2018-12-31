@@ -1,0 +1,18 @@
+/* homepage */
+
+.heroImage {
+  background-image: linear-gradient(to top, rgba(85, 93, 107, .7), rgba(85, 93, 107, .7)), url('../images/ottawa.jpg');
+  background-size: cover;
+  height: 80vh;
+  color: var(--colour-white);
+}
+
+@media only screen and (min-width: 48em) {
+  .heroImage {
+    background-image: linear-gradient(to top, rgba(85, 93, 107, .7), rgba(85, 93, 107, .7)), url('../images/ottawa.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    color: var(--colour-white);
+  }
+}
