@@ -1,0 +1,11 @@
+.bc-card-div {
+  background-color: var(--colour-light-grey);
+}
+
+.line-link {
+  color: var(--secondary-colour);
+}
+
+.line-link:hover {
+  color: var(--accent-colour);
+}
