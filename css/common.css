@@ -12,7 +12,7 @@
   --accent-colour-light: #B7C9CB;
   --colour-white: #fff;
   --colour-black: #000;
-  --colour-light-grey: #f2f2f2;
+  --colour-light-grey: #fafafa;
   --colour-dark-grey: #333;
 }
 
@@ -38,10 +38,37 @@
   color: var(--secondary-colour);
 }
 
+.blue-text {
+  color: var(--primary-colour);
+}
+
+.accent-text {
+  color: var(--accent-colour);
+}
+
+
+.green {
+  background-color: var(--secondary-colour);
+}
+
+.light-blue {
+  background-color: var(--primary-colour-light);
+}
+
+.blue {
+  background-color: var(--primary-colour-tint);
+}
+
 .btn-ghost {
   background-color: transparent;
   border-color: var(--secondary-colour);
   color: var(--secondary-colour);
+}
+
+.btn-blue {
+  background-color: var(--primary-colour);
+  border-color: transparent;
+  color: var(--colour-white);
 }
 
 .btn:hover {
@@ -56,12 +83,24 @@
   color: var(--accent-colour);
 }
 
-.max-widthtitle {
+.btn-blue:hover {
+  background-color: var(--secondary-colour);
+  border-color: transparent;
+  color: var(--colour-white);
+}
+
+
+.max-widthsmalltitle {
   max-width: 14em;
   color: var(--colour-white);
 }
 
+.max-widthtitle {
+  max-width: 16em;
+  color: var(--colour-white);
+}
+
 .max-widthtext {
-  max-width: 28em;
+  max-width: 29em;
   color: var(--colour-white);
 }

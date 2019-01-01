@@ -1,0 +1,8 @@
+.dyk-section,
+.champs-section {
+  background-color: var(--colour-light-grey);
+}
+
+.howto-section {
+  background-image: linear-gradient(to bottom, var(--colour-light-grey) 50%, var(--colour-white) 50%);
+}
