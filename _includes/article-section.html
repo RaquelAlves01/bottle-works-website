@@ -1,0 +1,34 @@
+<article class="pad-t-2 pad-b-2">
+  <div class="island-2 wrapper">
+    <h2 class="yotta normal push-1-2">{{page.articleSectionTitle}}</h2>
+    <p class="push-1-2">{{page.articleSectionText}}</p>
+    {% if page.articleSectionSubtext %}
+      <p class="push-0">{{page.articleSectionSubtext}}</p>
+    {% endif %}
+    <h3 class="pad-t push-1-2">{{page.articleSectionHeading}}</h3>
+    <p class="push-1-2">{{page.articleSectionFollowingText}}</p>
+    {% if page.articleSectionFollowingSubText %}
+      <p class="push-0">{{page.articleSectionFollowingSubText}}</p>
+    {% endif %}
+    {% if page.articleSectionFollowingSubtextTwo %}
+      <p class="push-0">{{page.articleSectionFollowingSubtextTwo}}</p>
+    {%endif%}
+
+    {% if page.articleSectionHeadingTwo %}
+      <h3 class="pad-t push-1-2">{{page.articleSectionHeadingTwo}}</h3>
+      <p class="push-1-2">{{page.articleSectionHeadingText}}</p>
+      <p class="push-0">{{page.articleSectionHeadingTextTwo}}</p>
+    {% endif %}
+
+    {% if page.articleSectionHeadingThree %}
+      <h3 class="pad-t push-0">{{page.articleSectionHeadingThree}}</h3>
+      <p class="push-0">{{page.articleSectionHeadingTextThree}}</p>
+      <p class="push-0">{{page.articleSectionHeadingTextTwoThree}}</p>
+      {% if page.articleSectionHeadingTextThreeThree %}
+        <p class="push-0">{{page.articleSectionHeadingTextThreeThree}}</p>
+      {% endif %}
+    {% endif %}
+
+
+  </div>
+</article>
