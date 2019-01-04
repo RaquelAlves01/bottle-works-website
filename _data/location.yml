@@ -1,0 +1,17 @@
+- image: images/ottawa.jpg
+  company: Beyond the Pale
+  companyType: Brewing Company
+  location: 250 City Centre Ave
+  city: Ottawa
+
+- image: images/ottawa.jpg
+  company: Bicycle Craft Brewery
+  companyType: Brewing Company
+  location: 850 Industrial Ave. &#35;12
+  city: Ottawa
+
+- image: images/ottawa.jpg
+  company: Bicycle Craft Brewery
+  companyType: Brewing Company Ltd
+  location: 81 Auriga Drive  &#35;14
+  city: Nepean

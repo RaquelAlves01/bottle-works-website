@@ -1,0 +1,19 @@
+- champTitle: Champ one
+  champQuote:  “Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas”
+  champTime: 2016
+  image: images/logo.svg
+
+- champTitle: Champ Two
+  champQuote:  “Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas”
+  champTime: 2014
+  image: images/logo.svg
+
+- champTitle: Champ Three
+  champQuote:  “Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas”
+  champTime: 2009
+  image: images/logo.svg
+
+- champTitle: Champ Four
+  champQuote:  “Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas”
+  champTime: 2015
+  image: images/logo.svg
