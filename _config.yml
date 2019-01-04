@@ -1,2 +1,3 @@
-baseurl: /bottle-works-website
+red-carpet: pretty
+baseurl: /bottle-works-website/
 exclude: ['README.md']
