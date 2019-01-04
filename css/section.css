@@ -1,8 +1,41 @@
 .dyk-section,
-.champs-section {
+.champs-section,
+.testimonial-section {
   background-color: var(--colour-light-grey);
 }
 
 .howto-section {
   background-image: linear-gradient(to bottom, var(--colour-light-grey) 50%, var(--colour-white) 50%);
+}
+
+.becoming-involved-section {
+  background-color: var(--colour-light-grey);
+}
+
+/* map */
+
+.map-section,
+.map-section .map-info {
+  height: 80vh;
+}
+
+.map-info {
+  overflow: scroll;
+}
+
+.map-top-info {
+  background-color: var(--colour-dark-grey);
+}
+
+.map-bottom-info {
+  background-color: var(--colour-light-grey);
+}
+
+.location-div {
+  background-color: var(--accent-colour);
+}
+
+#map {
+  width: 100%;
+  height: 80vh;
 }

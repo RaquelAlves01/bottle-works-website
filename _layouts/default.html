@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>BottleWorks {%if page.title%} · {{page.title}} {%endif%}</title>
+  <title>{%if page.title%} {{page.title}} · {%endif%} BottleWorks </title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
@@ -10,10 +10,9 @@
 <body>
 
   {% include nav.html %}
-<main role="main" tabindex="0" id="main">
-  {{content}}
-</main>
-
+  <main role="main" tabindex="0" id="main">
+    {{content}}
+  </main>
   {% include footer.html %}
 
   <script src="js/nav.js"></script>

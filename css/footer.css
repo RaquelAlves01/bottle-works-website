@@ -13,6 +13,11 @@ footer {
   color: var(--colour-white);
 }
 
+.quote-footer {
+  background-color: inherit;
+  color: var(--accent-colour);
+}
+
 hr {
   border-color: var(--accent-colour-light);
 }
