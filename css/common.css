@@ -13,7 +13,7 @@
   --colour-white: #fff;
   --colour-black: #000;
   --colour-light-grey: #fafafa;
-  --colour-dark-grey: #333;
+  --colour-dark-grey: #ddd;
 }
 
 .embed-4by2 {
@@ -90,6 +90,11 @@
 }
 
 
+.max-widthsmallertitle {
+  max-width: 11em;
+  color: var(--colour-white);
+}
+
 .max-widthsmalltitle {
   max-width: 14em;
   color: var(--colour-white);
@@ -102,5 +107,10 @@
 
 .max-widthtext {
   max-width: 29em;
+  color: var(--colour-white);
+}
+
+.max-widthsmalltext {
+  max-width: 10em;
   color: var(--colour-white);
 }
