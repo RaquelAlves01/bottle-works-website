@@ -59,6 +59,10 @@
   background-color: var(--primary-colour-tint);
 }
 
+.coorporate-blue {
+  background-color: var(--primary-colour);
+}
+
 .btn-ghost {
   background-color: transparent;
   border-color: var(--secondary-colour);

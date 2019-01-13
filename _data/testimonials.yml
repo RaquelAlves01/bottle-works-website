@@ -15,3 +15,8 @@
   testimonialQuote: “This is another quote <em class='not-italic bold blue-text'>to</em> <b class='bold accent-text'>be</b> written for BottleWorks”
   testimonialCite: Client Doe
   testimonialLocation: Location to be determined
+
+- image: image/logo.svg
+  testimonial: kid
+  testimonialQuote: “Bottleworks is a<em class='not-italic bold blue-text'>good</em> <b class='bold accent-text'>experience</b> for someone who's never had a job. It's hard work, challenging, and fun. The best part is unloading a truck full of bottle”
+  testimonialCite: -A

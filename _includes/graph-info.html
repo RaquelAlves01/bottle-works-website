@@ -9,14 +9,21 @@
       </div>
       <div class="unit [ xs-1 s-1 m-1-2 l-1-2 xl-1-2 ] gutter">
         <dl class="">
-          <dt class="graph-partner-name bold">Museum of Agriculture</dt>
-          <dd class="graph-bottles"><em class="bold not-italic green-text">####</em> Bottles Donated</dd>
-          <div class="light-blue">
-            Graph is to be inserted in this div
-          </div>
-          <span class="green-text pico"><em class="bold not-italic">###</em> Bottles collected to date</span>
+          <dt class="graph-partner-name bold"></dt>
+          <dd><em class="graph-bottles bold not-italic green-text">####</em> Bottles Donated</dd>
+          <canvas id="myChart" width="500" height="200">
+
+          </canvas>
+          <span class="green-text pico"><em class="bold not-italic bottles-total">###</em> Bottles collected to date</span>
         </dl>
       </div>
     </div>
   </div>
 </section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+<script src="{{site.baseurl}}/js/api.js"></script>
+  <script src="{{site.baseurl}}/js/chartInfo.js"></script>
+
+
+
+</script>

@@ -1,0 +1,118 @@
+---
+layout: default
+---
+
+
+<section class="form-one">
+  <form class="" action="index.html" method="post">
+    <div class="island-2">
+      <div class="shadow-sec island-2 wrapper push">
+        <div class=" flex-contain">
+          <span class="graphic-flex"></span>
+          <div class="title-flex">
+            <h2 class="push-0">Contact Information</h2>
+            <p class="push-2">All information is kept confidential for BottleWorks use only.</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="unit [ xs-1 s-1 m-1 l-1 ]">
+            <legend class="push-1-2 mega">Organization Information</legend>
+          </div>
+          <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-b">
+            <label class="milli" for="name">Name</label>
+            <input id="name" type="text" name="name" required>
+          </div>
+          <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-b">
+            <label class="milli" for="address">Address</label>
+            <input id="position" type="text" name="position" required>
+          </div>
+          <div class="unit [ xs-1 s-1 m-1 l-1 ]  pad-b">
+            <label class="milli" for="email">E-mail</label>
+            <input id="email" type="email" name="email" required>
+          </div>
+          <div class="unit [ xs-1 s-1 m-1 l-1 ]  pad-b-2">
+            <label class="milli" for="phone">Phone</label>
+            <input id="phone" type="tel" name="phone">
+          </div>
+          <div class="unit [ xs-1 s-1 m-1 l-1 ]  pad-b">
+            <label class="micro pad-b-1-4" for="tax-email"><em class="not-italic bold">We issue annual charitable tax receipts.</em><br> Please include an email to receive the tax receipt if different from above</label>
+            <input id="tax-email" type="email" name="tax-email">
+          </div>
+          <div class="unit [ xs-1 s-1 m-1 l-1 ]  pad-b">
+            <legend class="bold micro push-1-4">Can we include your establishment and total bottles collected on our website?</legend>
+            <input id="consent-yes" type="radio" name="consent" required>
+            <label class="milli" for="consent-yes">Yes</label>
+            <input id="consent-no" type="radio" name="consent">
+            <label class="milli gutter" for="consent-no">No</label>
+
+          </div>
+        </div>
+      </div>
+      <div class="shadow-sec island-2 wrapper">
+        <div class="grid">
+          <div class="unit [ xs-1 s-1 m-1 l-1 ]">
+            <legend class="push-1-2 mega">Bottle Collection</legend>
+          </div>
+          <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-b">
+            <legend class="push-1-2">Day<span class="micro not-bold">–Please select days all possible days for collection.</legend>
+            <input id="monday" type="checkbox" name="collection-days">
+            <label class="milli" for="monday">Monday</label>
+            <input id="tuesday" type="checkbox" name="collection-days">
+            <label class="gutter-1-2 milli"for="tuesday">Tuesday</label>
+            <input id="wednesday" type="checkbox" name="collection-days">
+            <label class="gutter-1-2 milli"for="wednesday">Wednesday</label>
+            <input id="thursday" type="checkbox" name="collection-days">
+            <label class="gutter-1-2 milli"for="thursday">Thursday</label>
+            <input id="friday" type="checkbox" name="collection-days">
+            <label class="gutter-1-2 milli"for="friday">Friday</label>
+            <span class="nano italic block pad-t-1-8">We will try our best to accommodate your preferences based on our existing schedule.</span>
+
+
+            <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-t-1-2 pad-b">
+              <label class="milli" for="start-date">Start date</label>
+              <input id="start-date" type="date" name="start-date" required>
+            </div>
+          </div>
+
+          <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-b">
+            <legend class="push-1-4">Time<span class="micro not-bold">–BottleWorks operates weekdays 8:30am to 3:30pm</span></legend>
+            <label class="bold micro" for="other-hours">Is there a window you would prefer we DO NOT  collect bottles?</label>
+            <textarea class="milli" id="other-hours" name="name" rows="1" cols="80" placeholder="i.e.: no pick-ups between 12pm-1pm or pick-up only after 9am?"></textarea>
+          </div>
+
+
+          <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-t">
+            <legend class="push-1-2 kilo">Frequency</legend>
+            <input id="every-week" type="radio" name="collection-frequency" required>
+            <label class="milli" for="every-week">Every week</label>
+            <input id="other-week" type="radio" name="collection-frequency">
+            <label class="gutter-1-2 milli"for="other-week">Every other week</label>
+            <input id="once-a-month" type="radio" name="collection-frequency">
+            <label class="gutter-1-2 milli"for="once-a-month">Once a month</label>
+            <input id="on-call" type="radio" name="collection-frequency">
+            <label class="gutter-1-2 milli"for="on-call">On call</label>
+
+            <div class="unit [ xs-1 s-1 m-1 l-1 ]  pad-t">
+              <legend class="bold micro push-1-4">Would you like us to provide a 240 Litre bin for bottle storage?</legend>
+              <input id="storage-yes" type="radio" name="litre-storage" required>
+              <label class="milli" for="storage-yes">Yes</label>
+              <input id="storage-no" type="radio" name="litre-storage">
+              <label class="milli gutter" for="storage-no">No</label>
+
+            </div>
+          </div>
+          <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-t-2">
+            <legend class="push-1-2">Any additional notes</legend>
+            <textarea name="name" rows="3" cols="80"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gutter-2 pad-b-2 wrapper text-center">
+
+      <button class="btn" type="submit" name="button">Submit</button>
+
+    </div>
+  </form>
+</section>

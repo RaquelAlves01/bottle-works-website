@@ -9,4 +9,12 @@
 .pl-container {
   background-color: var(--colour-light-grey);
   border: 6px solid var(--primary-colour-light);
+  height: 10em;
+}
+
+.pl-container-img {
+  width: 10em;
+  height: 10em;
+  object-fit: scale-down;
+
 }

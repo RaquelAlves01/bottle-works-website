@@ -2,8 +2,8 @@
 
   <div class="island-2 text-center grey-text">
     <div class="div-width">
-      <h2 class="push-1-2">{{page.becomeInvolvedTitle}}</h2>
-      <p>{{page.becomeInvolvedText}}</p>
+      <h2 class="push-1-2 {% if page.becomeInvolvedClass %} {{page.becomeInvolvedClass}} {% endif %}">{{page.becomingInvolvedTitle}}</h2>
+      <p>{{page.becomingInvolvedText}}</p>
     </div>
 
 
@@ -20,29 +20,25 @@
         </li>
 
         <li class="unit [xs-1 s-1 m-1-3 l-1-3 xl-1-3] gutter-1-4 pad-b-1-2">
-          <a href="#" class="link-box grey-text island bc-card-div">
-            <i class="icon i-64">
-              <img src="{{site.baseurl}}/images/logo.svg" aria-detail="Illustration of a commercial business" alt="Illustration of a commercial business">
-            </i>
-            <h3 class="giga pad-t push-0">Commercial</h3>
-            <p class="milli push-0">Buildings, companies, conference centres</p>
-          </a>
+          <i class="icon i-64">
+            <img src="{{site.baseurl}}/images/logo.svg" aria-detail="Illustration of a commercial business" alt="Illustration of a commercial business">
+          </i>
+          <h3 class="giga pad-t push-0">Commercial</h3>
+          <p class="milli push-0">Buildings, companies, conference centres</p>
         </li>
 
         <li class="unit [xs-1 s-1 m-1-3 l-1-3 xl-1-3] gutter-1-4 pad-b-1-2">
-          <a href="#" class="link-box grey-text island bc-card-div">
-            <i class="icon i-64">
-              <img src="{{site.baseurl}}/images/logo.svg" aria-detail="Illustration of a restaurant" alt="Illustration of a restaurant">
-            </i>
-            <h3 class="giga pad-t push-0">Restaurants</h3>
-            <p class="milli push-0">Local pubs, restaurants and bars</p>
-          </a>
+          <i class="icon i-64">
+            <img src="{{site.baseurl}}/images/logo.svg" aria-detail="Illustration of a restaurant" alt="Illustration of a restaurant">
+          </i>
+          <h3 class="giga pad-t push-0">Restaurants</h3>
+          <p class="milli push-0">Local pubs, restaurants and bars</p>
         </li>
       </ul>
     </div>
-
-    <a href="#" class="line-link bold pad-t-2 milli link-box">Check out how you can become a partner &#8594;</a>
-
+    {% if page.becomeInvolvedLink %}
+      <a href="#" class="line-link bold pad-t-2 milli link-box">Check out how you can become a partner &#8594;</a>
+    {% endif %}
   </div>
 
 </section>

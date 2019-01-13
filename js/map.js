@@ -23,7 +23,7 @@ function initMap(){
     var markers=[
         {   props:{lat:45.3939,lng:-75.6831},
             img:{
-              url:"../images/logo.svg",
+              url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
             content:"<h1>Tosca</h1>"
@@ -31,7 +31,7 @@ function initMap(){
         {
             props:{lat:45.4196,lng:-75.6968},
             img:{
-              url:"../images/logo.svg",
+              url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
             content:"<h1>Stella Luna</h1>"
@@ -42,42 +42,42 @@ function initMap(){
         },
         {   props:{lat:45.3939,lng:-75.6831},
             img:{
-              url:"../images/logo.svg",
+              url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
             content:"<h1>Tosca</h1>"
         },
         {   props:{lat:45.3939,lng:-75.6831},
             img:{
-              url:"../images/logo.svg",
+              url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
             content:"<h1>Tosca</h1>"
         },
         {   props:{lat:45.3939,lng:-75.6831},
             img:{
-              url:"../images/logo.svg",
+              url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
             content:"<h1>Tosca</h1>"
         },
         {   props:{lat:45.3939,lng:-75.6831},
             img:{
-              url:"../images/logo.svg",
+              url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
             content:"<h1>Tosca</h1>"
         },
         {   props:{lat:45.3939,lng:-75.6831},
             img:{
-              url:"../images/logo.svg",
+              url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
             content:"<h1>Tosca</h1>"
         },
         {   props:{lat:45.3939,lng:-75.6831},
             img:{
-              url:"../images/logo.svg",
+              url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
             content:"<h1>Tosca</h1>"
@@ -99,7 +99,7 @@ function initMap(){
         if(coords.img){
             marker.setIcon(coords.img);
         } else {
-          marker.setIcon('../images/logo.svg');
+          marker.setIcon('../images/map-marker.svg');
           // scaledSize: new google.maps.Size(10, 10);
         }
        //This will handle any undefined content values.
