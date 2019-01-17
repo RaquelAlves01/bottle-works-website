@@ -12,42 +12,35 @@
 
 - image: images/ottawa.jpg
   company: Broadhead
-  companyType: Brewing Company Ltd
   location: 81 Auriga Drive &#35;14
   city: Nepean
 
 - image: images/ottawa.jpg
   company: Broken Stick
-  companyType: Brewing Company Ltd
   location: 5450 Canotek Road
   city: Ottawa
 
 - image: images/ottawa.jpg
   company: Cartwright Springs
-  companyType: Brewery
   location: 239 Deer Run Road
   city: Pakernham
 
 - image: images/ottawa.jpg
   company: The Covered Bridge
-  companyType: Brewing Company Inc.
   location: 119 Iber Road &#35;6
   city: Stittsville
 
 - image: images/ottawa.jpg
   company: Broken Stick
-  companyType: Brewing Company Ltd
   location: 5510 Canotek Road &#35;15
   city: Gloucester
 
 - image: images/ottawa.jpg
   company: Whiprsnapr Brewery
-  companyType: Brewery Company
   location: 14 Bexley Place
   city: Nepean
 
 - image: images/ottawa.jpg
   company: Nita Beer Company
-  companyType: Brewing Company
   location: 1190 Colonnade Road &#35;17
   city: Nepean
