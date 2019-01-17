@@ -44,7 +44,7 @@
 /* FORMS */
 
 .form-one {
-  background-image: linear-gradient(to bottom, var(--secondary-colour) 40%, var(--colour-light-grey) 20%);
+  background-image: linear-gradient(to bottom, var(--secondary-colour) 20%, var(--colour-light-grey) 20%);
   height: inherit;
 }
 

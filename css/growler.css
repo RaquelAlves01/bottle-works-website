@@ -1,5 +1,5 @@
 .growler-sec {
-  background-color: var(--primary-colour-light)
+  background-color: var(--secondary-colour-light)
 }
 
 .partners-carousel {
@@ -7,14 +7,16 @@
 }
 
 .pl-container {
-  background-color: var(--colour-light-grey);
-  border: 6px solid var(--primary-colour-light);
-  height: 10em;
+  background-color: #eee;
+  border: 2px solid var(--primary-colour-light);
+  height: 5em;
+  width: 10em;
+  /* padding: .275em 0; */
+  text-align: center;
 }
 
 .pl-container-img {
-  width: 10em;
-  height: 10em;
-  object-fit: scale-down;
-
+  width: 6em;
+  height: inherit;
+  object-fit: contain;
 }
