@@ -21,14 +21,15 @@ function initMap(){
 
     //create array of markerts
     var markers=[
-        {   props:{lat:45.3939,lng:-75.6831},
+        {   id:0,
+            props:{lat:45.3939,lng:-75.6831},
             img:{
               url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
             content:"<h1>Tosca</h1>"
         },
-        {
+        {   id:1,
             props:{lat:45.4196,lng:-75.6968},
             img:{
               url:"../images/map-marker.svg",
@@ -36,46 +37,52 @@ function initMap(){
             },
             content:"<h1>Stella Luna</h1>"
         },
-        {
+        {   id:2,
             props:{lat:45.4188,lng:-75.6968},
             content:"<h1>Ottawa</h1>"
         },
-        {   props:{lat:45.3939,lng:-75.6831},
+        {   id:3,
+            props:{lat:45.3939,lng:-75.6831},
             img:{
               url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
             content:"<h1>Tosca</h1>"
         },
-        {   props:{lat:45.3939,lng:-75.6831},
+        {   id:4,
+            props:{lat:45.3939,lng:-75.6831},
             img:{
               url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
             content:"<h1>Tosca</h1>"
         },
-        {   props:{lat:45.3939,lng:-75.6831},
+        {   id:5,
+            props:{lat:45.3939,lng:-75.6831},
             img:{
               url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
             content:"<h1>Tosca</h1>"
         },
-        {   props:{lat:45.3939,lng:-75.6831},
+        {   id:6,
+            props:{lat:45.3939,lng:-75.6831},
             img:{
               url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
             content:"<h1>Tosca</h1>"
         },
-        {   props:{lat:45.3939,lng:-75.6831},
+        {   id:7,
+            props:{lat:45.3939,lng:-75.6831},
             img:{
               url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
             content:"<h1>Tosca</h1>"
         },
-        {   props:{lat:45.3939,lng:-75.6831},
+        {   id:8,
+            props:{lat:45.3939,lng:-75.6831},
             img:{
               url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
@@ -83,13 +90,14 @@ function initMap(){
             content:"<h1>Tosca</h1>"
         }]
     //Add Marker function
-    markers.forEach(marker=>{
-        addMarker(marker)
+    markers.forEach((marker, index)=>{
+        addMarker(marker, index)
     })
-    function addMarker(coords){
+    function addMarker(coords, index){
         let marker= new google.maps.Marker({
         position:coords.props,
         map:map,
+        markerId:coords.id
 //     this works but it's better to handle
 //undefined values before seeting the icon
 //        icon:coords.img
@@ -112,6 +120,23 @@ function initMap(){
     marker.addListener("click", function(){
         infoWindow.open(map, marker)
     })
+// clicks
+let locationDivs=document.querySelectorAll(".locations")
+// console.log(locationDivs)
+//        console.log(div);
+    let markerTarget=locationDivs[index];
+    console.log(markerTarget)
+    markerTarget.addEventListener("click", function(ev){
+        // locationDivs.forEach((itemClicked, index)=>{
+        // let infoclose=new google.maps.InfoWindow({content:coords.content}).close(map, marker)
+        // })
+    let dataId=ev.currentTarget.getAttribute("data-id")
+        if(dataId==marker.markerId){
+            console.log("open")
+        infoWindow.open(map, marker)
+        }
+    })
+
     }
     }
 }

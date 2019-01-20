@@ -3,44 +3,46 @@
   companyType: Brewing Company
   location: 250 City Centre Ave
   city: Ottawa
+  data-id: 0
 
 - image: images/ottawa.jpg
   company: Bicycle Craft Brewery
   companyType: Brewing Company
   location: 850 Industrial Ave. &#35;12
   city: Ottawa
-
+  data-id: 1
 - image: images/ottawa.jpg
   company: Broadhead
   location: 81 Auriga Drive &#35;14
   city: Nepean
-
+  data-id: 2
 - image: images/ottawa.jpg
   company: Broken Stick
   location: 5450 Canotek Road
   city: Ottawa
-
+  data-id: 3
 - image: images/ottawa.jpg
   company: Cartwright Springs
   location: 239 Deer Run Road
   city: Pakernham
-
+  data-id: 4
 - image: images/ottawa.jpg
   company: The Covered Bridge
   location: 119 Iber Road &#35;6
   city: Stittsville
-
+  data-id: 5
 - image: images/ottawa.jpg
   company: Broken Stick
   location: 5510 Canotek Road &#35;15
   city: Gloucester
-
+  data-id: 6
 - image: images/ottawa.jpg
   company: Whiprsnapr Brewery
   location: 14 Bexley Place
   city: Nepean
-
+  data-id: 7
 - image: images/ottawa.jpg
   company: Nita Beer Company
   location: 1190 Colonnade Road &#35;17
   city: Nepean
+  data-id: 8

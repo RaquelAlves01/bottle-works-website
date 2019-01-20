@@ -13,7 +13,7 @@
             <ul class="grid list-group">
               {% for places in site.data.location %}
                 <li class="unit [ xs-1 s-1 m-1-2 l-1-2 xl-1-2] pad-t pad-b gutter-1-4">
-                  <a href="#" class="link-box blue-text">
+                  <a  class="link-box blue-text locations" data-id={{places.data-id}}>
                     <div class="embed embed-3by2">
                       <img class="embed-item" src="{{site.baseurl}}/{{places.image}}" alt="">
                     </div>
