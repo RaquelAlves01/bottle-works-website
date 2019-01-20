@@ -62,6 +62,13 @@
   border-radius: 50%;
 }
 
+.form-sidenote {
+  border: 2px solid var(--colour-dark-grey);
+  border-right: 0;
+  border-left: 0;
+  background-color: var(--colour-light-grey);
+}
+
 .title-flex {
   /* display: inline-block; */
 }

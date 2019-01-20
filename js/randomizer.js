@@ -17,11 +17,14 @@ init: ()=>{
         })
 
         divs.forEach((div, index)=>{
-          console.log("div",div.childNodes[3].childNodes[0])
+          console.log("div",div.childNodes[2].nextElementSibling.children[0])
+            console.log("span",div.childNodes[2].nextElementSibling.children[1].children[0])
             let image=div.childNodes[1].childNodes[1]
-            let paragraph=div.childNodes[3].childNodes[0]
+            let rest_name=div.childNodes[2].nextElementSibling.children[0]
+            let paragraph=div.childNodes[2].nextElementSibling.children[1].children[0]
             if(!arrayOfRandom[index].image_name==""){ image.src=`https://allengoo.com/php/images/${arrayOfRandom[index].image_name}`
             }
+            rest_name.textContent=`${arrayOfRandom[index].restaurant_name}`
             paragraph.textContent=`${arrayOfRandom[index].number_of_bottles}`
         })
         console.log(arrayOfRandom)

@@ -10,51 +10,51 @@ layout: default
         <div class=" flex-contain">
           <span class="graphic-flex"></span>
           <div class="title-flex">
-            <h2 class="push-0">Contact Information</h2>
-            <p class="push-2">All information is kept confidential for BottleWorks use only.</p>
+            <h2 class="push-0 zetta">Contact Information</h2>
+            <p class="push-2 micro">All information is kept confidential for BottleWorks use only.</p>
           </div>
         </div>
         <div class="grid">
           <div class="unit [ xs-1 s-1 m-1 l-1 ]">
-            <legend class="push-1-2 mega">Organization Information</legend>
+            <legend class="peta push">Organization Information</legend>
           </div>
-          <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-b">
+          <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-b-1-2">
             <label class="milli" for="name">Name</label>
-            <input id="name" type="text" name="name" required>
+            <input id="name" type="text" name="name" required placeholder="John/Jane Smith">
           </div>
-          <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-b">
+          <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-b-1-2">
             <label class="milli" for="address">Address</label>
-            <input id="position" type="text" name="position" required>
+            <input id="position" type="text" name="position" required placeholder="Include number, name and city ">
           </div>
-          <div class="unit [ xs-1 s-1 m-1 l-1 ]  pad-b">
+          <div class="unit [ xs-1 s-1 m-1 l-1 ]  pad-b-1-2">
             <label class="milli" for="email">E-mail</label>
-            <input id="email" type="email" name="email" required>
+            <input id="email" type="email" name="email" required placeholder="you@example.com">
           </div>
           <div class="unit [ xs-1 s-1 m-1 l-1 ]  pad-b-2">
             <label class="milli" for="phone">Phone</label>
-            <input id="phone" type="tel" name="phone">
+            <input id="phone" type="tel" name="phone" placeholder="(000)000-0000">
           </div>
-          <div class="unit [ xs-1 s-1 m-1 l-1 ]  pad-b">
-            <label class="micro pad-b-1-4" for="tax-email"><em class="not-italic bold">We issue annual charitable tax receipts.</em><br> Please include an email to receive the tax receipt if different from above</label>
-            <input id="tax-email" type="email" name="tax-email">
-          </div>
-          <div class="unit [ xs-1 s-1 m-1 l-1 ]  pad-b">
-            <legend class="bold micro push-1-4">Can we include your establishment and total bottles collected on our website?</legend>
+          <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-t-2 pad-b-2">
+            <legend class="bold micro push-1-2">Can we include your establishment and total bottles collected on our website?</legend>
             <input id="consent-yes" type="radio" name="consent" required>
             <label class="milli" for="consent-yes">Yes</label>
             <input id="consent-no" type="radio" name="consent">
             <label class="milli gutter" for="consent-no">No</label>
 
           </div>
+          <div class="unit [ xs-1 s-1 m-1 l-1 ]  gutter-1-2 pad-t pad-b form-sidenote">
+            <label class="micro pad-b-1-4" for="tax-email"><em class="italic">We issue annual charitable tax receipts.</em><br> Please include an email to receive the tax receipt if different from above</label>
+            <input id="tax-email" type="email" name="tax-email" placeholder="you@anotherexample.com">
+          </div>
         </div>
       </div>
       <div class="shadow-sec island-2 wrapper">
         <div class="grid">
           <div class="unit [ xs-1 s-1 m-1 l-1 ]">
-            <legend class="push-1-2 mega">Bottle Collection</legend>
+            <legend class="push peta">Bottle Collection</legend>
           </div>
           <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-b">
-            <legend class="push-0">Day<span class="micro not-bold">–Please select days all possible days for collection.</legend>
+            <legend class="push-0 milli">Day</legend>
             <span class="nano italic block push-1-2">We will try our best to accommodate your preferences based on our existing schedule.</span>
 
             <input id="monday" type="checkbox" name="collection-days">
@@ -76,7 +76,7 @@ layout: default
           </div>
 
           <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-b">
-            <legend class="push-1-4">Time<span class="micro not-bold">–BottleWorks operates weekdays 8:30am to 3:30pm</span></legend>
+            <legend class="push-1-4">Time</legend>
             <label class="bold micro" for="other-hours">Is there a window you would prefer we DO NOT  collect bottles?</label>
             <textarea class="milli" id="other-hours" name="name" rows="1" cols="80" placeholder="i.e.: No pick-ups between 12pm-1pm or Pick-up only after 9am"></textarea>
           </div>
