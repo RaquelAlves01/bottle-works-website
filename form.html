@@ -34,11 +34,11 @@ layout: default
             <label class="milli" for="phone">Phone</label>
             <input id="phone" type="tel" name="phone" placeholder="(000)000-0000">
           </div>
-          <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-t-2 pad-b-2">
+          <div id="publish" class="unit [ xs-1 s-1 m-1 l-1 ] pad-t-2 pad-b-2">
             <legend class="bold micro push-1-2">Can we include your establishment and total bottles collected on our website?</legend>
-            <input id="consent-yes" type="radio" name="consent" required>
+            <input value="yes" id="consent-yes" type="radio" name="consent" required>
             <label class="milli" for="consent-yes">Yes</label>
-            <input id="consent-no" type="radio" name="consent">
+            <input value="no" id="consent-no" type="radio" name="consent">
             <label class="milli gutter" for="consent-no">No</label>
 
           </div>
@@ -53,7 +53,7 @@ layout: default
           <div class="unit [ xs-1 s-1 m-1 l-1 ]">
             <legend class="push peta">Bottle Collection</legend>
           </div>
-          <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-b">
+          <div id="collect-days" class="unit [ xs-1 s-1 m-1 l-1 ] pad-b">
             <legend class="push-0 milli">Day</legend>
             <span class="nano italic block push-1-2">We will try our best to accommodate your preferences based on our existing schedule.</span>
 
@@ -82,7 +82,7 @@ layout: default
           </div>
 
 
-          <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-t">
+          <div id="frequency" class="unit [ xs-1 s-1 m-1 l-1 ] pad-t">
             <legend class="push-1-2 kilo">Frequency</legend>
             <input id="every-week" type="radio" name="collection-frequency" required>
             <label class="milli" for="every-week">Every week</label>
@@ -93,7 +93,7 @@ layout: default
             <input id="on-call" type="radio" name="collection-frequency">
             <label class="gutter-1-2 milli"for="on-call">On call</label>
 
-            <div class="unit [ xs-1 s-1 m-1 l-1 ]  pad-t">
+            <div id="storage" class="unit [ xs-1 s-1 m-1 l-1 ]  pad-t">
               <legend class="bold micro push-1-4">Would you like us to provide a 240 Litre bin for bottle storage?</legend>
               <input id="storage-yes" type="radio" name="litre-storage" required>
               <label class="milli" for="storage-yes">Yes</label>
@@ -104,7 +104,7 @@ layout: default
           </div>
           <div class="unit [ xs-1 s-1 m-1 l-1 ] pad-t-2">
             <legend class="push-1-2">Any additional notes</legend>
-            <textarea name="name" rows="3" cols="80"></textarea>
+            <textarea id="additional-info" name="name" rows="3" cols="80"></textarea>
           </div>
         </div>
       </div>
@@ -112,8 +112,9 @@ layout: default
 
     <div class="gutter-2 pad-b-2 wrapper text-center">
 
-      <button class="btn" type="submit" name="button">Submit</button>
+      <button id="submit" class="btn" type="submit" name="button">Submit</button>
 
     </div>
   </form>
 </section>
+<script src="js/formValidation.js"></script>
