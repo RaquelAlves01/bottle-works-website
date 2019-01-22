@@ -165,7 +165,7 @@ a.navsize {
   padding: .5rem;
 }
 
-@media only screen and (min-width: 63em) {
+@media only screen and (min-width: 67em) {
 
   #togglenav {
     display: none;

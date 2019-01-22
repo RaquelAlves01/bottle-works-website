@@ -1,12 +1,14 @@
 .bc-card-div {
   background-color: var(--colour-light-grey);
-  transition: all 900ms linear;
-  -moz-transition: all 900ms linear;
-  -webkit-transition: all 900ms linear;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
 }
 
 .bc-card-div:hover {
-  background-color: var(--colour-dark-grey);
+  border-color: var(--colour-dark-grey);
 }
 
 .line-link {

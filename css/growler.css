@@ -10,13 +10,20 @@
   background-color: #eee;
   border: 2px solid var(--primary-colour-light);
   height: 5em;
-  width: 10em;
+  width: 7em;
   /* padding: .275em 0; */
   text-align: center;
 }
 
 .pl-container-img {
-  width: 6em;
+  width: 5em;
   height: inherit;
   object-fit: contain;
+}
+
+@media only screen and (min-width: 38em) {
+  .pl-container {
+    height: 5em;
+    width: 8em;
+  }
 }

@@ -3,13 +3,19 @@ footer {
     color: var(--accent-colour-light);
 }
 
-.footer-nav,
-.footer-link {
+.footer-nav {
   color: var(--accent-colour-light);
   text-decoration: none;
 }
 
-.footer-nav:hover {
+.footer-link {
+  color: var(--accent-colour-light);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent-colour-light);
+}
+
+.footer-nav:hover,
+.footer-link:hover {
   color: var(--colour-white);
 }
 
