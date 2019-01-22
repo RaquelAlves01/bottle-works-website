@@ -1,3 +1,22 @@
+.i-bottle {
+  height: 200px;
+  width: inherit;
+}
+
+.i-van {
+  width:  200px;
+  height: 100px;
+}
+
+@media only screen and (min-width: 38em) {
+  .i-bottle {
+    height: 400px;
+  }
+  .i-van {
+    width:  400px;
+    height: 200px;
+  }
+}
 .dyk-section,
 .champs-section,
 .testimonial-section {
@@ -43,8 +62,18 @@
 
 /* FORMS */
 
-.form-one {
+.form-colour-one {
   background-image: linear-gradient(to bottom, var(--secondary-colour) 20%, var(--colour-light-grey) 20%);
+  height: inherit;
+}
+
+.form-colour-two{
+  background-image: linear-gradient(to bottom, var(--primary-colour) 20%, var(--colour-light-grey) 20%);
+  height: inherit;
+}
+
+.form-colour-three {
+  background-image: linear-gradient(to bottom, var(--primary-colour) 20%, var(--colour-light-grey) 20%);
   height: inherit;
 }
 
@@ -58,8 +87,19 @@
   height: 50px;
   width: 50px;
   margin-right: 1em;
-  background-color: var(--secondary-colour);
   border-radius: 50%;
+}
+
+.graphic-colour-one {/
+  background-color: var(--secondary-colour);
+}
+
+.graphic-colour-two {/
+  background-color: var(--primary-colour);
+}
+
+.graphic-colour-three {/
+  background-color: var(--accent-colour);
 }
 
 .form-sidenote {

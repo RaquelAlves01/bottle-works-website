@@ -1,3 +1,3 @@
-red-carpet: pretty
-baseurl: /bottle-works-website/
+permalink: pretty
+baseurl: /bottle-works-website
 exclude: ['README.md']

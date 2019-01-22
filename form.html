@@ -2,13 +2,12 @@
 layout: default
 ---
 
-
-<section class="form-one">
+<section class="{{page.form-colour}}">
   <form class="" action="index.html" method="post">
     <div class="island-2">
       <div class="shadow-sec island-2 wrapper push">
         <div class=" flex-contain">
-          <span class="graphic-flex"></span>
+          <span class="graphic-flex {{page.form-graphic-colour}}"></span>
           <div class="title-flex">
             <h2 class="push-0 zetta">Contact Information</h2>
             <p class="push-2 micro">All information is kept confidential for BottleWorks use only.</p>
@@ -117,4 +116,4 @@ layout: default
     </div>
   </form>
 </section>
-<script src="js/formValidation.js"></script>
+<script src="{{site.baseurl}}/js/formValidation.js"></script>

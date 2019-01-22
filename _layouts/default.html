@@ -2,11 +2,12 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>{%if page.title%} {{page.title}} · {%endif%} BottleWorks </title>
+  <title>{%if page.homepage %} {{page.homepage}} {% else %} {{page.title}} · BottleWorks {% endif %}</title>
+  <meta name="description" content="{{page.meta}}">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link href="css/main.css" rel="stylesheet">
+  <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico">
+  <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
 </head>
 <body>
 
@@ -16,6 +17,6 @@
   </main>
   {% include footer.html %}
 
-  <script src="js/nav.js"></script>
+  <script src="{{site.baseurl}}/js/nav.js"></script>
 </body>
 </html>

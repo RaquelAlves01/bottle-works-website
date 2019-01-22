@@ -1,5 +1,12 @@
 .bc-card-div {
   background-color: var(--colour-light-grey);
+  transition: all 900ms linear;
+  -moz-transition: all 900ms linear;
+  -webkit-transition: all 900ms linear;
+}
+
+.bc-card-div:hover {
+  background-color: var(--colour-dark-grey);
 }
 
 .line-link {
