@@ -14,7 +14,7 @@ function initMap(){
               url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
-            content:"<h1>Beyond The Pale</h1>"
+            content:"<h2>Beyond The Pale</h2>\n<p>250 City Centre Ave, Ottawa</p>"
         },
         {   id:1,
             props:{lat:45.4066,lng:-75.6323},
@@ -22,7 +22,7 @@ function initMap(){
               url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
-            content:"<h1>Bicycle Craft Brewery</h1>"
+            content:"<h2>Bicycle Craft Brewery</h2>\n<p>850 Industrial Ave. &#35;12</p>"
         },
         {   id:2,
             props:{lat:45.3278,lng:-75.7116},
@@ -30,7 +30,7 @@ function initMap(){
                 url:"../images/map-marker.svg",
                 scaledSize: new google.maps.Size(40, 40)
               },
-            content:"<h1>Broahead</h1>"
+            content:"<h2>Broahead</h2>\n<p>81 Auriga Drive &#35;14</p>"
         },
         {   id:3,
             props:{lat:45.4597,lng:-75.5819},
@@ -38,7 +38,7 @@ function initMap(){
               url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
-            content:"<h1>Broken Stick</h1>"
+            content:"<h2>Broken Stick</h2>\n<p>5450 Canotek Road</p>"
         },
         {   id:4,
             props:{lat:45.3475,lng:-76.3446},
@@ -46,7 +46,7 @@ function initMap(){
               url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
-            content:"<h1>Cartwright Springs</h1>"
+            content:"<h2>Cartwright Springs</h2>\n<p>239 Deer Run Road</p>"
         },
         {   id:5,
             props:{lat:45.2773,lng:-75.9036},
@@ -54,7 +54,7 @@ function initMap(){
               url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
-            content:"<h1>The Covered Bridge</h1>"
+            content:"<h2>The Covered Bridge</h2>\n<p>119 Iber Road &#35;6</p>"
         },
         {   id:6,
             props:{lat:45.3301,lng:-75.8194},
@@ -62,7 +62,7 @@ function initMap(){
               url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
-            content:"<h1>Whiprsnapr Brewery</h1>"
+            content:"<h2>Whiprsnapr Brewery</h2>\n<p></p>"
         },
         {   id:7,
             props:{lat:45.3422,lng:-75.7156},
@@ -70,7 +70,7 @@ function initMap(){
               url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
-            content:"<h1>Nita Beer Company</h1>"
+            content:"<h2>Nita Beer Company</h2>\n<p></p>"
         }]
     //Add Marker function
     markers.forEach((marker, index)=>{
@@ -101,7 +101,14 @@ function initMap(){
             content:coords.content
             })
     //make event listener and pass map and marker
+    let lastInfoWindow=null;
     marker.addListener("click", function(){
+    if(lastInfoWindow&&lastInfoWindow===marker.id){
+            infoWindow.close(map,marker)
+        }else{
+            lastInfoWindow=marker.id
+        }
+        
         infoWindow.open(map, marker)
     })
 // clicks
