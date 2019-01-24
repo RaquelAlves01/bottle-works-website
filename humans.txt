@@ -1,0 +1,25 @@
+# humanstxt.org
+
+# TEAM
+
+Designer & Developer: Raquel Alves A.F <kellieira@gmail.com>
+Site: http://raquelalves.ca
+GitHub: https://github.com/raquelalves01
+Twitter: @kelviealves
+Behance: Raquel Alves
+Location: Ottawa, Canada
+
+Backend Developer: Cesar Guerrero <guer0157@algonquinlive.com>
+GitHub: https://github.com/guer0157
+Location: Ottawa, Canada
+
+Backend Developer: Allen Goo <goo00001@algonquinlive.com>
+GitHub: https://github.com/gooallen
+Location: Ottawa, Canada
+
+---
+
+# THANKS
+- Free Mockups
+  Used to find professional mockups for
+  https://originalmockups.com/free-mockups/

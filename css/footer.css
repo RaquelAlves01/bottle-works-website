@@ -1,6 +1,6 @@
 footer {
   background-color: var(--primary-colour-tint);
-    color: var(--accent-colour-light);
+  color: var(--accent-colour-light);
 }
 
 .footer-nav {
@@ -25,7 +25,7 @@ footer {
 }
 
 hr {
-  border-color: var(--accent-colour-light);
+  border: .5px solid var(--accent-colour-light);
 }
  @media only screen and (min-width: 60em) {
   .footer-logo {

@@ -7,16 +7,16 @@
 }
 
 .pl-container {
-  background-color: #eee;
-  border: 2px solid var(--primary-colour-light);
+  background-color: #333;
+  border: 2px solid transparent;
   height: 5em;
-  width: 7em;
+  width: 6em;
   /* padding: .275em 0; */
   text-align: center;
 }
 
 .pl-container-img {
-  width: 5em;
+  width: 4em;
   height: inherit;
   object-fit: contain;
 }
@@ -24,6 +24,6 @@
 @media only screen and (min-width: 38em) {
   .pl-container {
     height: 5em;
-    width: 8em;
+    width: 7em;
   }
 }

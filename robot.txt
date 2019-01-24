@@ -1,0 +1,6 @@
+# www.bottleworks.ca
+
+Sitemap: https://bottleworks.ca/sitemap.xml
+
+User-Agent: *
+Disallow: images

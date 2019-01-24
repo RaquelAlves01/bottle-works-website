@@ -74,6 +74,20 @@
   height: 200;
 }
 
+/* testimonial */
+
+.testimonial-text {
+  font-size: 1.067rem;
+  line-height: 1.625rem;
+}
+
+@media only screen and (min-width: 48em) {
+  .testimonial-text {
+    font-size: 1.68rem;
+    line-height: 2.275rem;
+  }
+}
+
 /* FORMS */
 
 .form-colour-one {
@@ -87,7 +101,7 @@
 }
 
 .form-colour-three {
-  background-image: linear-gradient(to bottom, var(--primary-colour) 20%, var(--colour-light-grey) 20%);
+  background-image: linear-gradient(to bottom, var(--accent-colour) 20%, var(--colour-light-grey) 20%);
   height: inherit;
 }
 

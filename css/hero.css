@@ -3,14 +3,14 @@
 .hero-image-one {
   background-image: linear-gradient(to top, rgba(85, 93, 107, .7), rgba(85, 93, 107, .7)), url('../images/ottawa.jpg');
   background-size: cover;
-  height: 80vh;
+  height: 90vh;
   color: var(--colour-white);
 }
 
 .hero-image-two {
   background-image: linear-gradient(to top, rgba(85, 93, 107, .7), rgba(85, 93, 107, .7)), url('../images/van.jpg');
   background-size: cover;
-  height: 80vh;
+  height: 90vh;
   color: var(--colour-white);
 }
 

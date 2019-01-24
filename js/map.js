@@ -62,7 +62,7 @@ function initMap(){
               url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
-            content:"<h2>Whiprsnapr Brewery</h2>\n<p></p>"
+            content:"<h2>Whiprsnapr Brewery</h2>\n<p>14 Bexley Place</p>"
         },
         {   id:7,
             props:{lat:45.3422,lng:-75.7156},
@@ -70,7 +70,7 @@ function initMap(){
               url:"../images/map-marker.svg",
               scaledSize: new google.maps.Size(40, 40)
             },
-            content:"<h2>Nita Beer Company</h2>\n<p></p>"
+            content:"<h2>Nita Beer Company</h2><p>1190 Colonnade Road #17</p>"
         }]
     //Add Marker function
     markers.forEach((marker, index)=>{
@@ -108,7 +108,7 @@ function initMap(){
         }else{
             lastInfoWindow=marker.id
         }
-        
+
         infoWindow.open(map, marker)
     })
 // clicks
@@ -124,7 +124,7 @@ let locationDivs=document.querySelectorAll(".locations")
             infoWindow.open(map, marker)
             }
         })
-    
+
     })
     }
     }

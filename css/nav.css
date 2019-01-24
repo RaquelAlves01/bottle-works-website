@@ -19,9 +19,9 @@ header {
 }
 
 #nav-items {
-  top: 10em;
+  top: 8em;
   right: -20%;
-  transform: translatex(-30%);
+  transform: translatex(-20%);
 }
 
 #nav-items li {
@@ -80,14 +80,14 @@ header {
 
 #nav-cover.show {
   width: 100%;
-  height: 200vh;
+  height: 1000vh;
   top: 0;
   background: rgba(85, 93, 107, 1);
   right: 0;
   left: 0;
   bottom: 0;
   transition: all .4s linear;
-  z-index: 2;
+  z-index: 4;
   position: absolute;
 }
 
@@ -100,7 +100,7 @@ header {
   display: block;
   margin: 0;
   padding: 0;
-  top: 150%;
+  top: 60%;
   right: 35%;
   transform: translateX(50%);
   z-index: 200;

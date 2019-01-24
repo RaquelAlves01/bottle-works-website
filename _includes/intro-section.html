@@ -1,8 +1,12 @@
 <section class="{{page.introSectionClass}}">
   <div class="island-2">
-    <div class="gutter-2">
+    <div>
       <h1 class="normal tena white-text {{page.heroWidth}} push-0">{{page.heroHone}}</h1>
       <p class="max-widthtext mega">{{page.heroText}}</p>
+
+      {% if page.errorBtn %}
+        <a class="line-link white-text" href="{{site.baseurl}}/index/">{{page.errorBtn}}</a>
+      {% endif %}
     </div>
   </div>
 </section>

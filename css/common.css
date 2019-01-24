@@ -2,6 +2,14 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+html {
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --primary-colour: #2A2E34;
   --primary-colour-tint: #231F20;

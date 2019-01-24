@@ -1,7 +1,7 @@
 // http://allengoo.com/php/bottleworksform2.php
 let dBdata = {
 init: ()=>{
-    fetch('https://allengoo.com/php/bottleworksform2.php')
+    fetch('http://bottleworks.ca/db/bottleworksform2.php')
         .then(response=>response.json())
         .then(data=> dBdata.doMath(data))
         .catch(err=>console.log(`Error: ${err}`))
@@ -22,7 +22,7 @@ init: ()=>{
             let image=div.childNodes[1].childNodes[1]
             let rest_name=div.childNodes[2].nextElementSibling.children[0]
             let paragraph=div.childNodes[2].nextElementSibling.children[1].children[0]
-            if(!arrayOfRandom[index].image_name==""){ image.src=`https://allengoo.com/php/images/${arrayOfRandom[index].image_name}`
+            if(!arrayOfRandom[index].image_name==""){ image.src=`http://bottleworks.ca/db/images/${arrayOfRandom[index].image_name}`
             }
             rest_name.textContent=`${arrayOfRandom[index].restaurant_name}`
             paragraph.textContent=`${arrayOfRandom[index].number_of_bottles}`
