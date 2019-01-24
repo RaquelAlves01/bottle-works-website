@@ -20,6 +20,8 @@ console.log('console',randomRestaurant);
 
 
 let dataSum=data.reduce(getSum)/10;
+let img=document.querySelector('.embed-item.graph-image');
+img.src=`http://bottleworks.ca/db/images/${randomRestaurant.image_name}`;
 let title=document.querySelector(".graph-partner-name").textContent=randomRestaurant.restaurant_name;
 let bottlesCollected=document.querySelector(".graph-bottles").textContent=randomRestaurant.number_of_bottles;
 let bottlesTotal=document.querySelector(".bottles-total").textContent=dataSum;
@@ -37,13 +39,14 @@ let dataset=[{
     backgroundColor:'rgba(255, 255, 0,.5)',
     borderWidth: 1,
     data:data[0],
-
 }]
+
 
 
 let chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'horizontalBar',
+    responsive:true,
     // The data for our dataset
     data: {
         labels: labels,
@@ -66,7 +69,7 @@ let chart = new Chart(ctx, {
 
     // Configuration options go here
     options: {
-        responsive:false,
+        responsive:true,
         title:{
             display:true,
             fontColor:"#000"
