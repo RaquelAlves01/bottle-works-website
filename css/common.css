@@ -21,7 +21,8 @@ body {
   --colour-white: #fff;
   --colour-black: #000;
   --colour-light-grey: #fafafa;
-  --colour-dark-grey: #ddd;
+  --colour-dark-grey: #eee;
+  --colour-darker-grey: #ccc;
 }
 
 .embed-4by2 {
@@ -69,6 +70,10 @@ body {
 
 .coorporate-blue {
   background-color: var(--primary-colour);
+}
+
+.light-green {
+  background-color: var(--secondary-colour-light);
 }
 
 .btn-ghost {

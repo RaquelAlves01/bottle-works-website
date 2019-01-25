@@ -58,15 +58,16 @@
 /* GRAPH */
 
 .graph-client {
-  background-color: #eee;
-  border: 2px solid var(--primary-colour-light);
-  height: 4em;
+  background-color: var(--colour-darker-grey);
+  height: 3em;
 }
 
 .graph-image {
-  width: 3em;
+  width: 15em;
+  left: 50%;
   height: inherit;
   object-fit: contain;
+  transform: translateX(-50%)
 }
 
 #myChart {

@@ -1,4 +1,4 @@
-- image: images/testimonial-two.svg
+- image: images/testimonial-three.svg
   testimonialQuote: “I am nothing <em class='not-italic bold blue-text'> but</em> <b class='bold accent-text'>happy</b> with our partnership”
   testimonialCite: Caitlin Kemmet
   testimonialLocation: Mill Street Brew Pub
@@ -6,8 +6,8 @@
 - image: images/testimonial-four.svg
   testimonialQuote: “What a great project for <em class='not-italic bold blue-text'> the </em><b class='bold accent-text'>community</b> and supporting Ottawa’s homeless youth”
   testimonialCite: Bonnie
-  testimonialLocation: The Driveway residential codominum coordinator
+  testimonialLocation: Residential Coordinator, 20 the Driveway
 
-- image: images/testimonial-three.svg
+- image: images/testimonial-two.svg
   testimonialQuote: “Bottleworks is a<em class='not-italic bold blue-text'> good </em> <b class='bold accent-text'>experience</b> for someone who's never had a job. It's hard work, challenging, and fun. The best part is unloading a truck full of bottle”
   testimonialCite: -A

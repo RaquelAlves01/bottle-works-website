@@ -19,7 +19,7 @@
   .hero-image-two {
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 80vh;
     color: var(--colour-white);
   }
 }

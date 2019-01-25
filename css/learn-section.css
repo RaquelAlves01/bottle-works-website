@@ -8,6 +8,11 @@
   color: var(--primary-colour-tint);
 }
 
+.learn-section-three {
+  background-color: var(--colour-dark-grey);
+  color: var(--primary-colour-tint);
+}
+
 .div-width {
   margin-left: auto;
   margin-right: auto;

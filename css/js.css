@@ -1,7 +1,0 @@
-.sectionOne, .sectionTwo, .sectionThree, .sectionFour, .sectionFive {opacity: 1;}
-
-@media only screen and (min-width: 38em) {
-  .sectionOne, .sectionTwo, .sectionThree, .sectionFour, .sectionFive {opacity: 1; transition: all 500ms linear; -webkit-transition: all 500ms linear; -moz-transition: all 500ms linear; transform: translateY(60px);}
-  .js-allow-animation { opacity: 0;}
-  .js-work-animate {opacity: 1; transform: translateY(0);}
-}
