@@ -2,7 +2,9 @@
 
 let init={
     formChange: function(ev){
-        ev.preventDefault()
+        let submitBtn=document.getElementById('submit')
+        console.log(submitBtn);
+        submitBtn.addEventListener('click', init.validation)
         let changeColorCircle=document.querySelector('.graphic-flex');
         let changeColorForm=document.getElementById('formColor');
         let targetForm=sessionStorage.getItem("formClicked");
@@ -24,104 +26,125 @@ let init={
             break;
 
         }
-        console.log(changeColorCircle)
-
-        
-
-        let submitBtn=document.getElementById('submit')
-        submitBtn.addEventListener('click', init.validation)
     },
     validation: function(ev){
-        console.log(ev.currentTarget);
-       ev.preventDefault();
+        ev.preventDefault()
         //required
         let nameField=document.getElementById('name')
-        //required (address)
+        nameField.onkeypress=function(){
+            nameField.style.borderColor="#666";
+            // let errName=nameField.nextElementSibling;
+            // errName.classList.remove("error-message");
+            // errName.classList.add("hide");
+        }
+        if (nameField.value == "") {
+            nameField.style.borderColor="red";
+        }
+        // //required (address)
         let addressField=document.getElementById('position')
-      
-        //required
+        addressField.onkeypress=function(){
+            addressField.style.borderColor="#666";
+            // let errName=nameField.nextElementSibling;
+            // errName.classList.remove("error-message");
+            // errName.classList.add("hide");
+        }
+        if (addressField.value == "") {
+            addressField.style.borderColor="red";
+        }
+        // //required
         let emailField=document.getElementById('email')
-    
-        //not required
-        let phoneField=document.getElementById('phone')
+        emailField.onkeypress=function(){
+            emailField.style.borderColor="#666";
+         }
+         let emailPattern = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+         let emailPass = emailPattern.test(emailField.value);
+         if (emailPass == false) {
+             if (emailField.value.length == 0) {
+                 emailField.style.borderColor="red";
+             } else {
+                 emailField.style.borderColor="red";
+             }
+         }
+      let phoneField=document.getElementById('phone')
+         //validate phone
+   
+          phoneField.onkeypress=function(){
+            phoneField.style.borderColor="#666";
+         }
+         if (!phoneField.value == "") {
+             let phonePattern_dashes = new RegExp(/^([0-9][0-9][0-9])-?([0-9][0-9][0-9])-?([0-9][0-9][0-9][0-9])$/);
+             let phonePass_dash = phonePattern_dashes.test(phoneField.value);
+             if (!phonePass_dash) {
+                 phoneField.style.borderColor="red";
+             }
+         }
        
-        //required
-        //child element = yes : no
-        //consent-yes
-        //consent-no
-        let publishBoolean=document.querySelectorAll('[name=consent]')
-        let publishBooleanValue=null
-        publishBoolean.forEach(button=>{
-            let checkedBtn=button.checked
-            if(checkedBtn==true){
-                publishBooleanValue=button.value
-            }
+       
+        // //required
+        // //child element = yes : no
+        // //consent-yes
+        // //consent-no
+        let publishBoolean=document.querySelectorAll('[name=consent]:checked')
+        // let publishBooleanValue=null
+        // publishBoolean.forEach(button=>{
+        //     let checkedBtn=button.checked
+        //     if(checkedBtn==true){
+        //         publishBooleanValue=button.value
+        //     }
       
-        })
-        //required
-        let taxEmailField=document.getElementById('tax-email')
+        // })
+        // //required
+        // let taxEmailField=document.getElementById('tax-email')
   
-        //collection days
-        let collectDaysArray=document.querySelectorAll('[name=collection-days]')
-        let daysChecked=[]
-        collectDaysArray.forEach(dayChecked=>{
-            if(dayChecked.checked){
-            daysChecked.push(dayChecked.id)
-            }
-        })
+        // //collection days
+        // let collectDaysArray=document.querySelectorAll('[name=collection-days]')
+        // let daysChecked=[]
+        // collectDaysArray.forEach(dayChecked=>{
+        //     if(dayChecked.checked){
+        //     daysChecked.push(dayChecked.id)
+        //     }
+        // })
 
-        //date
-        let startDateField=document.getElementById('start-date')
+        // //date
+        // let startDateField=document.getElementById('start-date')
  
-        //text
-        let otherHoursField=document.getElementById('other-hours')
+        // //text
+        // let otherHoursField=document.getElementById('other-hours')
   
-        //Frequency get all input>type='radio' child elements
-        let frequencyArray=document.querySelectorAll('[name=collection-frequency]')
+        // //Frequency get all input>type='radio' child elements
+        // let frequencyArray=document.querySelectorAll('[name=collection-frequency]')
         
       
-            let frequencyValue=null
-            frequencyArray.forEach((button)=>
-            {
-                if(button.checked){
-                  frequencyValue=button.id
-            }               
-            })
+        //     let frequencyValue=null
+        //     frequencyArray.forEach((button)=>
+        //     {
+        //         if(button.checked){
+        //           frequencyValue=button.id
+        //     }               
+        //     })
     
-        //required yes : no type:radio
-        let storageBoolean=document.querySelectorAll('[name=litre-storage]')
+        // //required yes : no type:radio
+        // let storageBoolean=document.querySelectorAll('[name=litre-storage]')
      
-        let storageValue=null
-        storageBoolean.forEach(option=>{
+        // let storageValue=null
+        // storageBoolean.forEach(option=>{
              
-            if(option.checked){
-                let regEx= new RegExp(/yes/);
-                let testReg=regEx.test(option.id)?storageValue='yes':storageValue='no'
-            }
-            })
+        //     if(option.checked){
+        //         let regEx= new RegExp(/yes/);
+        //         let testReg=regEx.test(option.id)?storageValue='yes':storageValue='no'
+        //     }
+        //     })
 
-        //text
-        let additionalInforField=document.getElementById('additional-info')
+        // //text
+        // let additionalInforField=document.getElementById('additional-info')
         
-        let responsesArray=[nameField.value,addressField.value,emailField.value,phoneField.value,publishBooleanValue,taxEmailField.value,daysChecked,startDateField.value,otherHoursField.value,frequencyValue,storageValue,additionalInforField.value]
-        console.log(responsesArray);
+        // let responsesArray=[nameField.value,addressField.value,emailField.value,phoneField.value,publishBooleanValue,taxEmailField.value,daysChecked,startDateField.value,otherHoursField.value,frequencyValue,storageValue,additionalInforField.value];
+        // console.log("Reaching this line")
+        // sendToDb(responsesArray)
+        // ev.preventDefault();
         
-        sendToDb(responsesArray)
     },
     sendToDb:function(data){
-    /////////////////////////////////////////////////
-        //    //     //     /////   ///  //
-      /////  //     //     ///     // / //
-     //  // ////// ////// //////  //  ///
-    /////////////////////////////////////////////////
-    /*
-    I had to comment out the code below so the page would not break.
-    but the string values below are the field names I will need
-    in the form database. The ones in '': 'name', 'email' etc..
-    */
-
-    
-        data.preventDefault();
         let fd=new FormData()
         fd.append('name', data[0])
         fd.append('address', data[1])
@@ -134,7 +157,7 @@ let init={
         fd.append('specific-hours', data[8])
         fd.append('pickup-frequency',data[9])
         fd.append('storage', data[10])
-        fd.append('additonal-info',data[10])
+        fd.append('additional-info',data[10])
         let opt={
             method:'POST',
             body:fd,
@@ -145,6 +168,7 @@ let init={
         .then((response)=>{console.log(response.json())})
         .catch(err=>{console.log("Error", err)})
     }
+
 }
 document.addEventListener('DOMContentLoaded', init.formChange)
 
