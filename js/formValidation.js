@@ -85,18 +85,20 @@ let init={
         // //consent-yes
         // //consent-no
         let publishBoolean=document.querySelectorAll('[name=consent]:checked')
-        // let publishBooleanValue=null
-        // publishBoolean.forEach(button=>{
-        //     let checkedBtn=button.checked
-        //     if(checkedBtn==true){
-        //         publishBooleanValue=button.value
-        //     }
-      
-        // })
+        if(publishBoolean.length===0){
+            let validatePublishBoolean=document.querySelectorAll('label.milli.yes')
+            validatePublishBoolean.forEach(radio=>{
+                radio.addEventListener('click',()=>{
+                    validatePublishBoolean.forEach(r=>r.style.color='black')
+                })
+                radio.style.color="red"})
+            console.log(validatePublishBoolean);
+        }
+
         // //required
-        // let taxEmailField=document.getElementById('tax-email')
+        let taxEmailField=document.getElementById('tax-email')
   
-        // //collection days
+        //collection days
         // let collectDaysArray=document.querySelectorAll('[name=collection-days]')
         // let daysChecked=[]
         // collectDaysArray.forEach(dayChecked=>{
@@ -106,7 +108,39 @@ let init={
         // })
 
         // //date
-        // let startDateField=document.getElementById('start-date')
+        let checkbox_days = document.querySelectorAll("input[name='collection-days']:checked");
+        let checked_days=[]
+        if(checkbox_days.length===0){
+            
+        let validateCheckbox_days=document.querySelectorAll("label.collection");
+        console.log("valcHe",validateCheckbox_days);
+
+        validateCheckbox_days.forEach(c=>{
+                c.style.color="red"
+                c.addEventListener('click',()=>{
+                    validateCheckbox_days.forEach(cb=>{
+                        cb.style.color="black"
+                    })
+                })
+                
+            }) 
+        }else{
+            checkbox_days.forEach((dayClicked)=>{
+             
+                let day=dayClicked.getAttribute("id")
+                checked_days.push(day);
+            })
+        }
+        
+        let startDateField=document.getElementById('start-date')
+        startDateField.addEventListener('click',()=>{ startDateField.style.borderColor="black";})
+            // let errName=nameField.nextElementSibling;
+            // errName.classList.remove("error-message");
+            // errName.classList.add("hide");
+        
+        if (startDateField.value == "") {
+            startDateField.style.borderColor="red";
+        }
  
         // //text
         // let otherHoursField=document.getElementById('other-hours')
