@@ -26,9 +26,9 @@
 
           <nav id="hiddennav" role="navigation" id="nav" class="absolute">
             <ul id="nav-items" class="list-group push-0">
-              <li class="linavspace"><a class="bold navsize link-box hover-nav {% if page.url =='{{site.baseurl}}/index' %} current {% endif %}" href="{{site.baseurl}}/index" aria-details="click here to go to home">HOME</a></li>
-              <li class="linavspace"><a class="bold navsize link-box hover-nav {% if page.url =='{{site.baseurl}}/about-us' %} current {% endif %}" href="{{site.baseurl}}/about-us" aria-details="click here learn more about us">ABOUT US</a></li>
-              <li class="linavspace"><a class="bold navsize link-box hover-nav" href="{{site.baseurl}}/social-enterprise" aria-details="click here to read about our social enterprise">SOCIAL ENTERPRISE MODEL</a></li>
+              <li class="linavspace"><a class="bold navsize link-box hover-nav {% if page.url == '/' %} current {% endif %}" href="{{site.baseurl}}/index" aria-details="click here to go to home">HOME</a></li>
+              <li class="linavspace"><a class="bold navsize link-box hover-nav {% if page.url contains 'about-us' %} current {% endif %}" href="{{site.baseurl}}/about-us" aria-details="click here learn more about us">ABOUT US</a></li>
+              <li class="linavspace"><a class="bold navsize link-box hover-nav " href="{{site.baseurl}}/social-enterprise" aria-details="click here to read about our social enterprise">SOCIAL ENTERPRISE MODEL</a></li>
               <li class="linavspace"><a class="bold navsize link-box hover-nav" href="{{site.baseurl}}/partnership" aria-details="click here learn more about our partnership">PARTNERSHIP</a></li>
               <li class="linavspace"><a class="bold navsize link-box hover-nav" href="{{site.baseurl}}/become-client" aria-details="click here see how to become a client">BECOME A CLIENT</a></li>
               <li class="linavspace"><a class="bold navsize link-box drop" href="{{site.baseurl}}/drop-off" aria-details="click here to see drop-off location">GROWLER EXCHANGE &#8594;</a></li>
