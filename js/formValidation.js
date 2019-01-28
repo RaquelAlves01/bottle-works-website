@@ -177,13 +177,18 @@ let init={
         }
        let additionalInfoField=document.getElementById("additional-info")
        console.log(val_count);
-       ["Cesar Guerrero Garcia", "157  rue Jeanned-d'Arc", "guer0157@algonquinlive.com", "", "consent-no", "", Array(1), "1997-01-15", "", "on-call", "storage-no", ""]
-       if(val_count.length==0){
-        let responsesArray=[nameField.value,addressField.value,emailField.value,phoneField.value,publishBooleanValue,taxEmailField.value,checked_days,startDateField.value,otherHoursField.value,frequencyValue,storageValue,additionalInfoField.value];
+       let tform=sessionStorage.getItem("formClicked");
+       console.log(tform)
+       if(val_count.length==0&&(tform=="graphic-colour-three")){
+        let responsesArray=[nameField.value,addressField.value,emailField.value,phoneField.value,publishBooleanValue,taxEmailField.value,checked_days,startDateField.value,otherHoursField.value,frequencyValue,storageValue,`Restaurant client application: ${additionalInfoField.value}`];
         init.sendToDb(responsesArray)
-    }
-
-   
+    }else if(val_count.length==0&&(tform=="graphic-colour-one")){
+        let responsesArray=[nameField.value,addressField.value,emailField.value,phoneField.value,publishBooleanValue,taxEmailField.value,checked_days,startDateField.value,otherHoursField.value,frequencyValue,storageValue,`Residential client application: ${additionalInfoField.value}`];
+        init.sendToDb(responsesArray)
+    }else{
+        let responsesArray=[nameField.value,addressField.value,emailField.value,phoneField.value,publishBooleanValue,taxEmailField.value,checked_days,startDateField.value,otherHoursField.value,frequencyValue,storageValue,`Commercial client application: ${additionalInfoField.value}`];
+        init.sendToDb(responsesArray)
+    }   
     },
     sendToDb:function(data){
         console.log(data)
@@ -215,7 +220,7 @@ let init={
     confirmSubmit: (data)=>{
     console.log("THis is the data", data)
     sessionStorage.setItem("formPassed", true);
-    window.location.href = 'http://127.0.0.1:4000/bottle-works-website/';
+    // window.location.href = 'http://127.0.0.1:4000/bottle-works-website/';
     }
 
 }
