@@ -209,8 +209,13 @@ let init={
 
         fetch('http://bottleworks.ca/db/api/form.php', opt)
         .then((response)=>{return response.json()})
-        .then(data=>{console.log(data)})
+        .then(init.confirmSubmit)
         .catch(err=>{console.log("Error", err)})
+    },
+    confirmSubmit: (data)=>{
+    console.log("THis is the data", data)
+    sessionStorage.setItem("formPassed", true);
+    window.location.href = 'http://127.0.0.1:4000/bottle-works-website/';
     }
 
 }

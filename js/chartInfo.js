@@ -1,6 +1,6 @@
 let chart={
     init: function(ev){
-        console.log(ev)
+
 
 let data=[]
 let totalData=[10]
@@ -11,27 +11,27 @@ ev.forEach(user=>{
 })
 
 let getSum=(total, num)=>{
-    console.log(total,num)
+   
     return total + num
 }
 
 let randomRestaurant=ev[Math.floor(Math.random()*ev.length)];
-console.log('console',randomRestaurant);
 
 
 let dataSum=data.reduce(getSum)/10;
 let img=document.querySelector('.embed-item.graph-image');
+if(randomRestaurant.image_name==""){
+    img.src="../images/logo-regular.svg"
+}else{
 img.src=`http://bottleworks.ca/db/images/${randomRestaurant.image_name}`;
+}
 let title=document.querySelector(".graph-partner-name").textContent=randomRestaurant.restaurant_name;
 let bottlesCollected=document.querySelector(".graph-bottles").textContent=randomRestaurant.number_of_bottles;
 let bottlesTotal=document.querySelector(".bottles-total").textContent=dataSum;
 
-//        let d=data.reduce(getSum);
-
-//        let chartSet=[randomRestaurant.number_of_bottles, dataSum]
 
         let chartSet=[randomRestaurant.number_of_bottles, dataSum]
-//let borderColor=['rgb(175, 189, 56)','rgb(236, 239, 210)']
+
 let backgroundColor=['rgb(175, 189, 56)','rgb(236, 239, 210)']
 
 let dataset=[{

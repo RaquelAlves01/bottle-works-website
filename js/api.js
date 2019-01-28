@@ -14,7 +14,6 @@ let bottleWorks={
         .catch(err=>{console.log(err)})
     },
     runChart: function(data){
-        console.log(data)
         chart.init(data)
     }
 }
