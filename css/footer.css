@@ -27,6 +27,15 @@ footer {
 hr {
   border: .5px solid var(--accent-colour-light);
 }
+
+.short-footer {
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  width:100%;
+ }
+
  @media only screen and (min-width: 60em) {
   .footer-logo {
     padding-left: 1em;
