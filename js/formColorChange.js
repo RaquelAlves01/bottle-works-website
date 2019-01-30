@@ -1,12 +1,15 @@
 //class="link-box grey-text island bc-card-div">
+
 let formColor=document.querySelectorAll('.link-box.grey-text.island.bc-card-div');
+console.log(formColor);
 formColor.forEach((element)=>{
     element.addEventListener('click', getClick)
 })
 function getClick(ev){
 ev.preventDefault()
+console.log("this happened")
 let targetColor=ev.currentTarget.getAttribute('id')
-
+console.log(targetColor);
 // sessionStorage.setItem("lastname", "Smith");
 // Retrieve
 // document.getElementById("result").innerHTML = sessionStorage.getItem("lastname");
