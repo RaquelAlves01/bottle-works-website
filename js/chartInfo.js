@@ -11,7 +11,7 @@ ev.forEach(user=>{
 })
 
 let getSum=(total, num)=>{
-   
+
     return total + num
 }
 
@@ -51,14 +51,14 @@ let chart = new Chart(ctx, {
     data: {
         labels: labels,
         datasets: [{
-            label: "Bottles Collected",
+            label: "Bottles collected",
             backgroundColor: backgroundColor,
             borderWidth: 0,
 //            borderColor: borderColor,
             data: chartSet
         },
         {
-            label: "Monthly average collected",
+            label: "Bottleworks annual collection (average)",
             backgroundColor: backgroundColor[1],
             borderWidth: 0,
 //            borderColor: borderColor,

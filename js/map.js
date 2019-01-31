@@ -31,7 +31,7 @@ function initMap(){
                 url:"../images/map-marker.svg",
                 scaledSize: new google.maps.Size(40, 40)
               },
-            content:"<h2>Broahead</h2>\n<p>81 Auriga Drive &#35;14</p>"
+            content:"<h2>Broadhead</h2>\n<p>81 Auriga Drive &#35;14</p>"
         },
         {   id:3,
             props:{lat:45.4597,lng:-75.5819},
