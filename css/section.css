@@ -8,6 +8,30 @@
   height: 100px;
 }
 
+.transparent-background {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: 1000;
+  display: none;
+}
+
+.transparent-background-show {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: 1000;
+}
+
+.form-card {
+  background-color: var(--colour-white);
+}
+
 @media only screen and (min-width: 38em) {
   .i-bottle {
     height: 400px;
