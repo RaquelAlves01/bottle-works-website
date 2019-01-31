@@ -3,7 +3,11 @@ let dBdata = {
 init: ()=>{
     fetch('http://bottleworks.ca/db/bottleworksform2.php')
         .then(response=>response.json())
-        .then(data=> dBdata.doMath(data))
+        .then(data=> {
+            // console.log(data)
+            // let publish=data.filter(client=>client.publish return;)
+            dBdata.doMath(data)
+        })
         .catch(err=>console.log(`Error: ${err}`))
     },
     doMath: (data)=>{
