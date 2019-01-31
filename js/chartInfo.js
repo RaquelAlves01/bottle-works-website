@@ -19,6 +19,9 @@ let randomRestaurant=ev[Math.floor(Math.random()*ev.length)];
 
 
 let dataSum=data.reduce(getSum)/10;
+let dataS=data.reduce(getSum);
+console.log(dataSum);
+console.log(dataS);
 let img=document.querySelector('.embed-item.graph-image');
 if(randomRestaurant.image_name==""){
     img.src="../images/logo-regular.svg"
@@ -51,7 +54,7 @@ let chart = new Chart(ctx, {
     data: {
         labels: labels,
         datasets: [{
-            label: "Bottles collected",
+            label: "Bottles Donates",
             backgroundColor: backgroundColor,
             borderWidth: 0,
 //            borderColor: borderColor,

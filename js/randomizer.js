@@ -4,13 +4,14 @@ init: ()=>{
     fetch('http://bottleworks.ca/db/bottleworksform2.php')
         .then(response=>response.json())
         .then(data=> {
-            // console.log(data)
-            // let publish=data.filter(client=>client.publish return;)
-            dBdata.doMath(data)
+           let publish=data.filter(client=>client.publish==true?true:false)
+            console.log(publish);
+            dBdata.doMath(publish)
         })
         .catch(err=>console.log(`Error: ${err}`))
     },
     doMath: (data)=>{
+        console.log(data);
         let arrayOfRandom=[]
         // get the amount of items
         let divs= document.querySelectorAll('.partner-ligroup')
