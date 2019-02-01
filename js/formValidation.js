@@ -185,9 +185,21 @@ let init={
     }else if(val_count.length==0&&(tform=="graphic-colour-one")){
         let responsesArray=[nameField.value,addressField.value,emailField.value,phoneField.value,publishBooleanValue,taxEmailField.value,checked_days,startDateField.value,otherHoursField.value,frequencyValue,storageValue,`Residential client application: ${additionalInfoField.value}`];
         init.sendToDb(responsesArray)
-    }else{
-        let responsesArray=[nameField.value,addressField.value,emailField.value,phoneField.value,publishBooleanValue,taxEmailField.value,checked_days,startDateField.value,otherHoursField.value,frequencyValue,storageValue,`Commercial client application: ${additionalInfoField.value}`];
+    }else if(val_count.length==0&&(tform=="graphic-colour-two")){
+        let responsesArray=[nameField.value,addressField.value,emailField.value,phoneField.value,publishBooleanValue,taxEmailField.value,checked_days,startDateField.value,otherHoursField.value,frequencyValue,storageValue,`Residential client application: ${additionalInfoField.value}`];
         init.sendToDb(responsesArray)
+    }
+    else{
+        window.scrollTo(0, 0);
+        let msgH2=document.getElementById("msg-form");
+        let msg=document.querySelector(".transparent-background.absolute");
+        msgH2.textContent="Could not submit, ensure all required fields are provided."
+         console.log(init.msgH2);
+        msg.className="transparent-background-show absolute"
+        console.log(init.msg)
+        setTimeout(()=>{
+            msg.className="transparent-background absolute"
+        }, 5000)
     }   
     },
     sendToDb:function(data){
@@ -218,9 +230,19 @@ let init={
         .catch(err=>{console.log("Error", err)})
     },
     confirmSubmit: (data)=>{
-    console.log("THis is the data", data)
+        window.scrollTo(0, 0);
+        let msgH2=document.getElementById("msg-form");
+        let msg=document.querySelector(".transparent-background.absolute");
+        msgH2.textContent="Thank you, your form was submitted successfully."
+         console.log(init.msgH2);
+        msg.className="transparent-background-show absolute"
+        console.log(init.msg)
+        setTimeout(()=>{
+            msg.className="transparent-background absolute"
+             window.location.href = 'http://127.0.0.1:4000/bottle-works-website/';
+        }, 5000)
     sessionStorage.setItem("formPassed", true);
-    // window.location.href = 'http://127.0.0.1:4000/bottle-works-website/';
+    
     }
 
 }
