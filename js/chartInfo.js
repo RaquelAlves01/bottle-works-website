@@ -4,7 +4,7 @@ let chart={
 
 let data=[]
 let totalData=[10]
-let ctx=document.getElementById("myChart").getContext('2d');
+// let ctx=document.getElementById("myChart").getContext('2d');
 let labels=["",""]
 ev.forEach(user=>{
     data.push(parseInt(user.number_of_bottles))
@@ -43,58 +43,4 @@ let dataset=[{
     borderWidth: 1,
     data:data[0],
 }]
-
-
-
-let chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'horizontalBar',
-    responsive:true,
-    // The data for our dataset
-    data: {
-        labels: labels,
-        datasets: [{
-            label: "Bottles Donates",
-            backgroundColor: backgroundColor,
-            borderWidth: 0,
-//            borderColor: borderColor,
-            data: chartSet
-        },
-        {
-            label: "Bottleworks annual collection (average)",
-            backgroundColor: backgroundColor[1],
-            borderWidth: 0,
-//            borderColor: borderColor,
-            data: chartSet
-        }]
-    }
-    ,
-
-    // Configuration options go here
-    options: {
-        responsive:true,
-        title:{
-            display:true,
-            fontColor:"#000"
-        },
-        scales: {
-            xAxes: [{
-                gridLines:{
-                    color:"rgba(0,0,0,0)",
-                },
-                ticks: {
-                    suggestedMin:0,
-                }
-            }],
-            yAxes: [{
-                stacked:true,
-                gridLines:{
-                    color:"rgba(0,0,0,0)",
-                },
-                barPercentage: 0.5,
-                categoryPercentage: .5,
-    }]
-        }
-    }
-});
 }}
