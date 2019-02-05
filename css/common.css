@@ -29,6 +29,10 @@ body {
   padding-top: 65%;
 }
 
+.upper {
+  text-transform: uppercase;
+}
+
 .btn {
   background-color: var(--secondary-colour);
   border-color: transparent;

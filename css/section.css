@@ -81,17 +81,21 @@
 
 /* GRAPH */
 
+.graph-section {
+  height: 50vh;
+}
+
 .graph-client {
-  background-color: var(--colour-darker-grey);
-  height: 3em;
+  background-color: var(--primary-colour-light);
+  height: 2em;
 }
 
 .graph-image {
-  width: 15em;
+  width: 8em;
   left: 50%;
   height: inherit;
   object-fit: contain;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
 
 #myChart {
