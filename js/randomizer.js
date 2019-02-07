@@ -2,7 +2,7 @@
 // import svg from '../images/logo-regular.svg'
 let dBdata = {
 init: ()=>{
-    fetch('http://bottleworks.ca/db/bottleworksform2.php')
+    fetch('https://bottleworks.ca/db/bottleworksform2.php')
         .then(response=>response.json())
         .then(data=> {
            let publish=data.filter(client=>client.publish==true?true:false)
@@ -40,7 +40,7 @@ init: ()=>{
             return true
         }
     })
-   
+
         // if(noDupRandom!=0){
         //     console.log(noDupRandom.length)
         //     console.log(arrayOfRandom.findIndex((dup)=>{
@@ -48,23 +48,23 @@ init: ()=>{
         //     })
         //     )
         // }
-       
-        
+
+
 
         divs.forEach((div, index)=>{
 
             let image=div.childNodes[1].childNodes[1]
             let rest_name=div.childNodes[2].nextElementSibling.children[0]
             let paragraph=div.childNodes[2].nextElementSibling.children[1].children[0]
-           
+
             // !arrayOfRandom[index].image_name==""
-            if(arrayOfRandom[index].image_name==""){ 
-        
+            if(arrayOfRandom[index].image_name==""){
+
                 image.src="./images/logo-regular.svg"
 
         }else{
-  
-            image.src=`http://bottleworks.ca/db/images/${arrayOfRandom[index].image_name}`        
+
+            image.src=`http://bottleworks.ca/db/images/${arrayOfRandom[index].image_name}`
         }
             rest_name.textContent=`${arrayOfRandom[index].restaurant_name}`
             paragraph.textContent=`${arrayOfRandom[index].number_of_bottles}`
