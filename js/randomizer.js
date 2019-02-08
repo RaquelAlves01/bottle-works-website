@@ -53,7 +53,8 @@ init: ()=>{
 
         divs.forEach((div, index)=>{
 
-            let image=div.childNodes[1].childNodes[1]
+            let image=div.childNodes[1].childNodes[1];
+            console.log(image);
             let rest_name=div.childNodes[2].nextElementSibling.children[0]
             let paragraph=div.childNodes[2].nextElementSibling.children[1].children[0]
 
@@ -62,10 +63,10 @@ init: ()=>{
 
                 image.src="./images/logo-regular.svg"
 
-        }else{
+            }else{
 
             image.src=`https://bottleworks.ca/db/images/${arrayOfRandom[index].image_name}`
-        }
+            }
             rest_name.textContent=`${arrayOfRandom[index].restaurant_name}`
             paragraph.textContent=`${arrayOfRandom[index].number_of_bottles}`
         })
