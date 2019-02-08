@@ -17,22 +17,22 @@ console.log(targetColor);
 switch(targetColor){
     case 'residential-green-one':
     sessionStorage.setItem("formClicked", 'graphic-colour-one');
-    window.location.href = 'http://127.0.0.1:4000/bottle-works-website/form';
+    window.location.href = 'http://bottleworks.ca/form';
     return;
     case 'commercial-grey-two':
     sessionStorage.setItem("formClicked", 'graphic-colour-two');
-    window.location.href = 'http://127.0.0.1:4000/bottle-works-website/form';
+    window.location.href = 'http://bottleworks.ca/form';
     return;
     case 'restaurant-blue-three':
     sessionStorage.setItem("formClicked", 'graphic-colour-three');
-    window.location.href = 'http://127.0.0.1:4000/bottle-works-website/form';
+    window.location.href = 'http://bottleworks.ca/form';
     return;
     default:
     break;
 }
-// 
+//
 }
 console.log(formColor);
 console.log(window.location.href);
 
-// 
+//
