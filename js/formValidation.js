@@ -230,6 +230,7 @@ let init={
         .catch(err=>{console.log("Error", err)})
     },
     confirmSubmit: (data)=>{
+       console.log(data);
         window.scrollTo(0, 0);
         let msgH2=document.getElementById("msg-form");
         let msg=document.querySelector(".transparent-background.absolute");
@@ -239,7 +240,7 @@ let init={
         console.log(init.msg)
         setTimeout(()=>{
             msg.className="transparent-background absolute"
-             window.location.href = 'http://127.0.0.1:4000/bottle-works-website/';
+             window.location.href = 'http://bottleworks.ca/';
         }, 5000)
     sessionStorage.setItem("formPassed", true);
 
