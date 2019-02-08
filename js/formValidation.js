@@ -240,7 +240,7 @@ let init={
         console.log(init.msg)
         setTimeout(()=>{
             msg.className="transparent-background absolute"
-             window.location.href = 'http://bottleworks.ca/';
+             window.location.href = 'http://bottleworks.ca/index';
         }, 5000)
     sessionStorage.setItem("formPassed", true);
 
