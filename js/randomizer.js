@@ -64,7 +64,7 @@ init: ()=>{
 
         }else{
 
-            image.src=`http://bottleworks.ca/db/images/${arrayOfRandom[index].image_name}`
+            image.src=`https://bottleworks.ca/db/images/${arrayOfRandom[index].image_name}`
         }
             rest_name.textContent=`${arrayOfRandom[index].restaurant_name}`
             paragraph.textContent=`${arrayOfRandom[index].number_of_bottles}`
