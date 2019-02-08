@@ -2,7 +2,7 @@
 // import svg from '../images/logo-regular.svg'
 let dBdata = {
 init: ()=>{
-    fetch('https://bottleworks.ca/db/bottleworksform2.php')
+    fetch('http://bottlework.ca/db/bottleworksform2.php')
         .then(response=>response.json())
         .then(data=> {
            let publish=data.filter(client=>client.publish==true?true:false)
@@ -65,7 +65,7 @@ init: ()=>{
 
             }else{
 
-            image.src=`https://bottleworks.ca/db/images/${arrayOfRandom[index].image_name}`
+            image.src=`http://bottlework.ca/db/images/${arrayOfRandom[index].image_name}`
             }
             rest_name.textContent=`${arrayOfRandom[index].restaurant_name}`
             paragraph.textContent=`${arrayOfRandom[index].number_of_bottles}`

@@ -1,5 +1,5 @@
 let bottleWorks={
-    baseurl:"http://bottleworks.ca/db/bottleworksform2.php",
+    baseurl:"http://bottlework.ca/db/bottleworksform2.php",
     init: function(){
     let options={
         method: "GET", // *GET, POST, PUT, DELETE, etc.

@@ -67,7 +67,7 @@ let init={
          }
       let phoneField=document.getElementById('phone')
          //validate phone
-   
+
           phoneField.onkeypress=function(){
             phoneField.style.borderColor="#666";
          }
@@ -78,8 +78,8 @@ let init={
                  phoneField.style.borderColor="red";
              }
          }
-       
-       
+
+
         // //required
         // //child element = yes : no
         // //consent-yes
@@ -93,7 +93,7 @@ let init={
                     validatePublishBoolean.forEach(r=>r.style.color='black')
                 })
                 radio.style.color="red"
-                
+
             })
             val_count.push(5)
             console.log(validatePublishBoolean);
@@ -103,12 +103,12 @@ let init={
 
         // //required
         let taxEmailField=document.getElementById('tax-email')
-  
+
         // //date
         let checkbox_days = document.querySelectorAll("input[name='collection-days']:checked");
         let checked_days=[]
         if(checkbox_days.length===0){
-            
+
         let validateCheckbox_days=document.querySelectorAll("label.collection");
         console.log("valcHe",validateCheckbox_days);
 
@@ -119,20 +119,20 @@ let init={
                         cb.style.color="black"
                     })
                 })
-                
-            }) 
+
+            })
             val_count.push(6)
         }else{
             checkbox_days.forEach((dayClicked)=>{
-             
+
                 let day=dayClicked.getAttribute("id")
                 checked_days.push(day);
             })
         }
-        
+
         let startDateField=document.getElementById('start-date')
         startDateField.addEventListener('click',()=>{ startDateField.style.borderColor="black";})
-        
+
         if (startDateField.value == "") {
             startDateField.style.borderColor="red";
             val_count.push(7)
@@ -141,9 +141,9 @@ let init={
         let frequencyValue
         let collectionFreq=document.querySelectorAll(".collection-freq")
         collectionFreq.forEach(b=>{
-           
+
                 b.addEventListener('click',()=>{
-                  collectionFreq.forEach(cf=>cf.style.color="black")  
+                  collectionFreq.forEach(cf=>cf.style.color="black")
                 })
             b.style.color="black";
         })
@@ -151,8 +151,8 @@ let init={
             let collecting=document.querySelectorAll(".collection-freq")
         collecting.forEach(b=>{
             b.style.color="red";
-           
-        }) 
+
+        })
         val_count.push(8)
         }else{
          frequencyValue=frequencyArray[0].attributes.id.value
@@ -168,7 +168,7 @@ let init={
                     validatestorageBoolean.forEach(r=>r.style.color='black')
                 })
                 radio.style.color="red"
-               
+
             })
             val_count.push(9)
             console.log(validatestorageBoolean);
@@ -200,7 +200,7 @@ let init={
         setTimeout(()=>{
             msg.className="transparent-background absolute"
         }, 5000)
-    }   
+    }
     },
     sendToDb:function(data){
         console.log(data)
@@ -224,7 +224,7 @@ let init={
             mode:'cors'
         }
 
-        fetch('http://bottleworks.ca/db/api/form.php', opt)
+        fetch('http://bottlework.ca/db/api/form.php', opt)
         .then((response)=>{return response.json()})
         .then(init.confirmSubmit)
         .catch(err=>{console.log("Error", err)})
@@ -242,9 +242,8 @@ let init={
              window.location.href = 'http://127.0.0.1:4000/bottle-works-website/';
         }, 5000)
     sessionStorage.setItem("formPassed", true);
-    
+
     }
 
 }
 document.addEventListener('DOMContentLoaded', init.formChange)
-
