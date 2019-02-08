@@ -1,4 +1,4 @@
-- image: ../images/testimonial-three.svg
+- image: ../images/testimonial-one.svg
   testimonialQuote: “I am nothing <em class='not-italic bold blue-text'> but</em> <b class='bold accent-text'>happy</b> with our partnership”
   testimonialCite: Caitlin Kemmet
   testimonialLocation: Mill Street Brew Pub
