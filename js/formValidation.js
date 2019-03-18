@@ -224,7 +224,7 @@ let init={
             mode:'cors'
         }
 
-        fetch('http://bottlework.ca/db/api/form.php', opt)
+        fetch('https://bottlework.ca/db/api/form.php', opt)
         .then((response)=>{return response.json()})
         .then(init.confirmSubmit)
         .catch(err=>{console.log("Error", err)})
@@ -240,7 +240,7 @@ let init={
         console.log(init.msg)
         setTimeout(()=>{
             msg.className="transparent-background absolute"
-             // window.location.href = 'http://bottleworks.ca/index';
+
              window.history.back()
         }, 5000)
     sessionStorage.setItem("formPassed", true);

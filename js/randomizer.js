@@ -1,8 +1,7 @@
-// http://allengoo.com/php/bottleworksform2.php
-// import svg from '../images/logo-regular.svg'
+
 let dBdata = {
 init: ()=>{
-    fetch('http://bottlework.ca/db/bottleworksform2.php')
+    fetch('https://bottlework.ca/db/bottleworksform2.php')
         .then(response=>response.json())
         .then(data=> {
            let publish=data.filter(client=>client.publish==true?true:false)
@@ -65,7 +64,7 @@ init: ()=>{
 
             }else{
 
-            image.src=`http://bottlework.ca/db/images/${arrayOfRandom[index].image_name}`
+            image.src=`https://bottlework.ca/db/images/${arrayOfRandom[index].image_name}`
             }
             rest_name.textContent=`${arrayOfRandom[index].restaurant_name}`
             paragraph.textContent=`${arrayOfRandom[index].number_of_bottles}`

@@ -26,7 +26,7 @@ let img=document.querySelector('.embed-item.graph-image');
 if(randomRestaurant.image_name==""){
     img.src="../images/logo-regular.svg"
 }else{
-img.src=`http://bottlework.ca/db/images/${randomRestaurant.image_name}`;
+img.src=`https://bottlework.ca/db/images/${randomRestaurant.image_name}`;
 }
 let title=document.querySelector(".graph-partner-name").textContent=randomRestaurant.restaurant_name;
 let bottlesCollected=document.querySelector(".graph-bottles").textContent=randomRestaurant.number_of_bottles;

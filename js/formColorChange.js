@@ -17,15 +17,15 @@ console.log(targetColor);
 switch(targetColor){
     case 'residential-green-one':
     sessionStorage.setItem("formClicked", 'graphic-colour-one');
-    window.location.href = 'http://bottleworks.ca/form';
+    window.location.href = 'https://bottleworks.ca/form';
     return;
     case 'commercial-grey-two':
     sessionStorage.setItem("formClicked", 'graphic-colour-two');
-    window.location.href = 'http://bottleworks.ca/form';
+    window.location.href = 'https://bottleworks.ca/form';
     return;
     case 'restaurant-blue-three':
     sessionStorage.setItem("formClicked", 'graphic-colour-three');
-    window.location.href = 'http://bottleworks.ca/form';
+    window.location.href = 'https://bottleworks.ca/form';
     return;
     default:
     break;
